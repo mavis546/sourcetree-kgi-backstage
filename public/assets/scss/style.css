@@ -1,0 +1,551 @@
+@charset "UTF-8";
+html {
+  font-size: 16px; /* 將根元素的字體大小設置為16px */
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+/*改Bootstrap-1 START*/
+.btn-block + .btn-block {
+  margin-top: 0rem;
+}
+
+/*改Bootstrap-1 END*/
+/*改grid START*/
+.col {
+  padding: 0;
+}
+
+/*改grid END*/
+ol,
+ul {
+  list-style: none;
+}
+
+/*****Component START*****/
+body {
+  font-family: "微軟正黑體";
+  background-color: #F2F4F8;
+  margin: 0;
+  padding: 0;
+}
+
+.color-pink {
+  color: #F57969 !important;
+}
+
+.font-size-sub-08 {
+  font-size: 0.8rem !important;
+}
+
+/*** Typographic START ***/
+.flex-alignitems-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flex-row-between-alignitems-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row-between-align-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.flex-row-between-alignitems-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column-center-alignitems-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.flex-column-justify-between-alignitems-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.flex-column-justify-end-alignitems-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+/*** Typographic END ***/
+h1 {
+  font-size: 1.5rem !important;
+}
+
+hr {
+  margin: 0.1rem 0 0.5rem !important;
+  height: 0.2rem;
+}
+
+article {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+  article {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/*****Component END*****/
+/*** customize START ***/
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.wrapper {
+  padding: 1rem 0rem;
+  margin: 8% 0 0 21% !important;
+  position: absolute;
+  width: 78%;
+}
+
+.logo-area {
+  width: 12rem;
+  height: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 0 0.7rem 0;
+}
+
+.logout-button {
+  width: 2.4rem;
+  color: #13357A !important;
+  border-radius: 2rem !important;
+  -webkit-border-radius: 2rem !important;
+  -moz-border-radius: 2rem !important;
+}
+
+.btn-nav-primary {
+  background: #fff !important;
+  color: #13357A !important;
+  border-color: #13357A !important;
+  width: 100%;
+}
+
+.btn-nav-primary:hover {
+  color: #fff !important;
+  background-color: #13357A !important;
+  border-color: #fff !important;
+}
+
+.top-bg-white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px 2px #e0e0e0;
+  padding: 0.1rem 1rem;
+}
+
+.v-line {
+  border-right: 0.1rem solid #13357A !important;
+  height: 2rem;
+}
+
+.top-admin-margin {
+  margin: -3rem 0 0rem 0;
+}
+
+.top-admin-area {
+  margin: 0 1rem 0;
+}
+
+.navbar-right {
+  position: fixed;
+  z-index: 10;
+  width: 97%;
+  height: 100%;
+  background-color: #fff !important;
+}
+
+.breadcrumb-font {
+  color: #13357A !important;
+  font-size: 1.2rem !important;
+  font-weight: bold;
+}
+
+.product-area {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.1rem solid #98A1B1 !important;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+}
+
+/*** customize END ***/
+/*改Bootstrap-2 START*/
+.btn-info {
+  color: #fff !important;
+  background-color: #58B7A1 !important;
+}
+
+.container-fluid {
+  display: block;
+  padding: 0 !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.nav-item {
+  padding: 1rem 0;
+}
+
+.nav-item:hover {
+  background-color: #1D52BD !important;
+}
+
+.nav-item > button,
+.nav-item > a {
+  margin: 0 auto;
+  color: #fff !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-menu {
+  font-size: 0.8rem !important;
+  text-align: center !important;
+  background-color: #13357A !important;
+  margin: 1rem 0 -0.8rem 0 !important;
+  padding: 0rem 0 !important;
+}
+
+.dropdown-menu:hover {
+  padding: 0rem 0 !important;
+}
+
+.dropdown-menu > li {
+  list-style-type: circle !important;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-menu > li:hover {
+  background-color: #1D52BD !important;
+}
+
+.dropdown-item:hover {
+  background-color: #1D52BD !important;
+}
+
+.dropdown-item {
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    width: 20% !important;
+    position: fixed !important;
+    margin: 4rem 0 0 0;
+    top: 0;
+    background-color: #13357A !important;
+    height: 100%;
+  }
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: static !important;
+  }
+}
+/*改Bootstrap-2 END*/
+/*** Modal START ***/
+/*改Bootstrap-3 Start */
+.modal-header {
+  justify-content: space-between;
+}
+
+.form-check-input {
+  background-color: #374258 !important;
+}
+
+.form-check-input:checked {
+  background-color: #374258 !important;
+  border-color: #374258 !important;
+}
+
+/*改Bootstrap-3 End */
+.fullScreenBlack {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  pointer-events: auto;
+}
+
+.modal-area-set,
+.modal-phone-area-set {
+  margin: 6rem auto 0 !important;
+  z-index: 1001;
+  width: 50% !important;
+  padding: 1rem;
+  background-color: #fff !important;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+}
+
+.modal-phone-area-set {
+  width: 30% !important;
+}
+
+.modal-phone-area-set > .modal-content {
+  border: none !important;
+}
+
+.phone-area {
+  padding: 0rem !important;
+}
+
+.phone-area > table {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.phone-area > table > tbody {
+  background: transparent url(../images/product/phone15_form.png) center top no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 1.35rem;
+}
+
+.phone-area > table > tbody > tr {
+  width: 100%;
+}
+
+.phone-area > table > tbody > tr > td {
+  width: 24%;
+  background-color: #F5F8FA !important;
+  border: 1rem solid #fff;
+  border-bottom: 0.1rem solid #fff !important;
+  padding: 0.5rem;
+}
+
+.phone-area > table > tbody > tr > td > h6 {
+  float: left;
+}
+
+.btn-close-set2 {
+  left: 98%;
+  width: 2rem;
+  height: 2.1rem;
+  position: relative;
+  align-content: flex-end;
+  margin: 0.1rem 0 0 -1.5rem;
+  border: 1px solid #fff !important;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+}
+
+.btn-close-set {
+  width: 2rem;
+  height: 2.1rem;
+  position: relative;
+  align-content: flex-end;
+  margin: 0.5rem 0 0 0;
+  border: 1px solid #fff !important;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+}
+
+.word-danger {
+  color: #F57969 !important;
+  font-size: 0.8rem;
+}
+
+.word-warning {
+  color: #E78F2B !important;
+  font-size: 0.8rem;
+}
+
+.word-gray {
+  color: #374258 !important;
+  font-size: 0.75rem;
+}
+
+/*** Modal END ***/
+/*** labels START ***/
+.labels-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.labels-area {
+  display: inline-flex;
+  align-items: center;
+}
+
+.labels-area > label {
+  margin: 0 0.5rem 0 0;
+}
+
+/* 改Bootstrap-3 START */
+.form-floating > label {
+  font-size: 0.9rem;
+  color: #98A1B1 !important;
+  line-height: 1.6rem;
+}
+
+/* 改Bootstrap-3 END */
+/*** labels END ***/
+/*** react-datepicker START ***/
+/*改 react-datepicker Start */
+.react-datepicker__input-container {
+  font-size: 0.9rem;
+  border: 0.1rem solid #dee2e6 !important;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+}
+
+.react-datepicker__input-container input {
+  border: none;
+}
+
+.react-datepicker__input-container :focus-visible {
+  outline: none;
+}
+
+/*改 react-datepicker End */
+/*** react-datepicker END ***/
+/*** Icon fontawesome START ***/
+/*改 fontawesome Start */
+.calendar-icon-area {
+  margin: 0 0.5rem 0 -1.5rem;
+  position: relative;
+}
+
+/*改 fontawesome End */
+/*** Icon fontawesome END ***/
+/*改 tables START */
+.table {
+  font-size: 0.8rem;
+  height: 30rem;
+  display: block;
+  width: 100%; /* 或者任何您想要指定的寬度 */
+  height: 100%;
+  table-layout: fixed;
+}
+
+.table > :not(caption) > * > * {
+  text-align: center !important;
+}
+
+.table tbody tr th,
+.table tbody tr td {
+  vertical-align: middle;
+}
+
+.table thead tr th {
+  width: 7%;
+  table-layout: fixed;
+}
+
+.table td a {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table td button {
+  font-size: 0.8rem;
+}
+
+/*改 tables END */
+/*** 上傳圖片 Button 設定 START ***/
+/* 隱藏文件選擇按鈕 */
+.custom-file-input { /* 自定義的樣式 */
+  cursor: pointer; /* 將游標設置為手指形式，指示它是可點擊的 */
+}
+
+.custom-file-input-label { /* 顯示所選文件的文件名 */
+  margin-left: 0.8rem;
+}
+
+.upload-button,
+.upload-button2,
+.upload-button3 {
+  width: 6.8rem;
+  height: 4.8rem;
+  border: 0.1rem solid #dee2e6 !important;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  box-sizing: content-box;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button2 {
+  width: 13.8rem;
+}
+
+.upload-button3 {
+  width: 14.8rem;
+}
+
+.upload-button img,
+.upload-button2 img,
+.upload-button3 img {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/*** 上傳圖片 Button 設定 END ***//*# sourceMappingURL=style.css.map */

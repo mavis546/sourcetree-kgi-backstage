@@ -1,0 +1,600 @@
+html {
+  font-size: 16px;/* 將根元素的字體大小設置為16px */
+  // overflow: hidden;//再確認是否如此改
+}
+a,
+a:hover {
+  text-decoration: none !important;
+}
+/*改Bootstrap-1 START*/
+.btn-block+.btn-block {
+  margin-top: 0rem;
+}
+$btn-info:#58B7A1 !important;
+/*改Bootstrap-1 END*/
+
+/*改grid START*/
+.col {
+  padding: 0;
+}
+/*改grid END*/
+
+ol,
+ul {
+  list-style: none;
+}
+
+/*****Component START*****/
+$font-family: "微軟正黑體";
+body{
+  font-family: $font-family;
+  background-color: #F2F4F8;
+  margin: 0;
+  padding: 0;
+}
+
+$btn-nav-primary:#13357A !important;
+$btn-nav-pressed:#1D52BD !important;
+$color-gray:#374258 !important;
+$color-gray2:#dee2e6 !important;
+$secondary-font: #98A1B1 !important;
+$color-white: #fff !important;
+$color-blue:#258EFF !important;
+$color-pink: #F57969 !important;
+$color-orange: #E78F2B !important;
+.color-pink{
+  color: $color-pink;
+}
+$product-bg:#F5F8FA !important;
+
+$font-size: 1rem; //16px
+$font-up-size-12: 1.2rem !important;
+$font-up-size-15: 1.5rem !important;
+$font-size-sub-08: 0.8rem;
+$font-size-sub-09: 0.9rem;
+$font-size-sub-075: 0.75rem; //12px
+.font-size-sub-08 {
+  font-size: $font-size-sub-08 !important;
+}
+
+/*** Typographic START ***/
+.flex-alignitems-center{
+  display: flex;
+  align-items: center;
+}
+.flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flex-row-between-alignitems-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-row-between-align-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+.flex-row-between-alignitems-content{
+  display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-column-center-alignitems-start{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.flex-column-justify-between-alignitems-start{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.flex-column-justify-end-alignitems-start{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+@mixin flex-justify-center-alignitems-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*** Typographic END ***/
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+@mixin border-radius-r($radius) {
+  -moz-border-radius-topright: $radius;
+  -webkit-border-top-right-radius: $radius;
+  border-top-right-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+@mixin border-radius-l($radius) {
+  -moz-border-radius-topleft: $radius;
+  -webkit-border-top-left-radius: $radius;
+  border-top-left-radius: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+@mixin border-radius-b($radius) {
+  -moz-border-radius-bottomleft: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+  -moz-border-radius-bottomright: $radius;
+  -webkit-border-bottom-right-radius: $radius;
+  border-bottom-right-radius: $radius;
+}
+$tabbar-border: #e0e0e0;
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 2px 4px 2px $tabbar-border;
+  -moz-box-shadow: 0px 2px 4px 2px $tabbar-border;
+  box-shadow: 0px 2px 4px 2px $tabbar-border;
+}
+@media (min-width: 0px) {
+  //大於 0px 後的設定 //「電腦版」//xs
+}
+@media (min-width: 576px) {
+  //大於 576px 後的設定 //「電腦版」//sm
+}
+@media (min-width: 768px) {
+  //大於 768px 後的設定 //「電腦版」//md
+}
+@media (min-width: 992px) {
+  //大於 992px 後的設定 //「電腦版」//lg
+}
+@media (min-width: 1200px) {
+  //大於 1200px 後的設定 //「電腦版」//xl
+}
+@media (min-width: 1400px) {
+  //大於 1400px 後的設定 //「電腦版」//xxl
+}
+
+h1 {
+  font-size: $font-up-size-15;
+}
+hr{
+  margin: 0.1rem 0 0.5rem !important;
+  height: 0.2rem;
+}
+article{
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 992px) {
+  //大於 992px 後的設定 //「電腦版」//lg
+  article {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+/*****Component END*****/
+
+/*** customize START ***/
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.wrapper {
+  padding: 1rem 0rem;
+  margin: 8% 0 0 21% !important;
+  position: absolute;
+  width: 78%;
+}
+.logo-area {
+  width: 12rem;
+  height: 4rem;
+  // background: transparent url(../images/LOGOArea.png) center top no-repeat;
+  // background-size: cover;
+  object-fit: contain; //圖片 自適應
+  margin:0 0.7rem 0;
+}
+.logout-button {
+  width: 2.4rem;
+  color: $btn-nav-primary;
+  border-radius: 2rem !important;
+  -webkit-border-radius: 2rem !important;
+  -moz-border-radius: 2rem !important;
+}
+.btn-nav-primary {
+  background: $color-white;
+  color: $btn-nav-primary;
+  border-color: $btn-nav-primary;
+  width: 100%; // button 寬度 100%
+}
+.btn-nav-primary:hover {
+  color: $color-white;
+  background-color: $btn-nav-primary;
+  border-color: $color-white;
+}
+.top-bg-white {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include box-shadow;
+  // padding: 1rem 0;
+  padding: 0.1rem 1rem;
+}
+.v-line {
+  border-right: 0.1rem solid $btn-nav-primary;
+  height: 2rem;
+}
+.top-admin-margin {
+  margin: -3rem 0 0rem 0;
+}
+.top-admin-area {
+  margin: 0 1rem 0;
+}
+.navbar-right {
+  position: fixed;
+  z-index: 10;
+  // right: 0;
+  width: 97%; // button 寬度 97%
+  height: 100%;
+  background-color: $color-white;
+  // padding: 0 0.7rem;
+  // margin: 1.4rem auto 0; //排除 @media (min-width: 768px) {...}
+}
+.breadcrumb-font {
+  color: $btn-nav-primary;
+  font-size: $font-up-size-12;
+  font-weight: bold;
+}
+.product-area {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 0.1rem solid $secondary-font;
+  @include border-radius(0.5rem);
+}
+/*** customize END ***/
+
+/*改Bootstrap-2 START*/
+.btn-info {
+  color: $color-white;
+  background-color: $btn-info;
+}
+.container-fluid{
+  display: block;
+  padding: 0 !important;
+}
+.navbar-nav{
+  display: flex !important;
+  flex-direction: column !important;
+}
+.nav-item {
+  // height: 4rem;  //不可以寫固定高度，button 子選單 會不能將下一個功能選單向下推申，要用 padding。
+  padding: 1.0rem 0;
+  // display: flex;  //不可以寫固定高度，button 子選單 會不能將下一個功能選單向下推申。
+  // justify-content: center;  //不可以寫固定高度，button 子選單 會不能將下一個功能選單向下推申。
+}
+.nav-item:hover {
+  background-color: $btn-nav-pressed;
+}
+.nav-item>button,
+.nav-item>a {
+  margin: 0 auto;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-menu{
+  font-size: $font-size-sub-08 !important;
+  text-align: center!important;
+  background-color:$btn-nav-primary;
+  margin: 1rem 0 -0.8rem 0 !important;
+  padding: 0rem 0 !important;
+}
+.dropdown-menu:hover{
+  padding: 0rem 0 !important;
+}
+.dropdown-menu >li{
+  list-style-type:circle !important;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.dropdown-menu>li:hover {
+  background-color: $btn-nav-pressed;
+}
+.dropdown-item:hover{
+  background-color: $btn-nav-pressed;
+}
+.dropdown-item {
+  color: $color-white;
+  padding: 0.5rem 1rem;
+}
+@media (min-width: 768px) {
+  //大於 768px 後的設定 //「電腦版」
+  .navbar-nav {
+    width: 20% !important;
+    position: fixed !important;
+    margin: 4rem 0 0 0;
+    top: 0;
+    background-color: $btn-nav-primary;
+    height: 100%;
+  }
+  .navbar-expand-md .navbar-nav .dropdown-menu {
+    position: static !important;
+  }
+}
+/*改Bootstrap-2 END*/
+
+/*** Modal START ***/
+/*改Bootstrap-3 Start */
+.modal-header{
+  justify-content: space-between;
+}
+.form-check-input{
+  background-color:$color-gray;
+}
+.form-check-input:checked {
+  background-color: $color-gray;
+  border-color: $color-gray;
+}
+
+/*改Bootstrap-3 End */
+.fullScreenBlack {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  pointer-events: auto;
+}
+.modal-area-set,
+.modal-phone-area-set {
+    margin: 6rem auto 0!important;
+    z-index: 1001;
+    width: 50% !important;
+    padding: 1rem;
+    background-color: $color-white;
+    @include border-radius(0.5rem);
+}
+.modal-phone-area-set {
+  width: 30% !important;
+}
+.modal-phone-area-set > .modal-content{
+  border: none !important;
+}
+
+
+.phone-area{
+  padding: 0rem !important;
+  // background: transparent url(../images/product/phone15_form.png) center top no-repeat;
+  // background-size: cover;
+  // &.table{
+  //   &.tbody{
+  //     display: flex !important;
+  //     justify-content:center!important;
+  //   }
+  // }
+}
+.phone-area>table{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.phone-area > table > tbody{
+  background: transparent url(../images/product/phone15_form.png) center top no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem 1.35rem;
+  // margin: 3rem 0 0 0;
+}
+.phone-area>table>tbody>tr{
+  width: 100%;
+}
+.phone-area>table>tbody>tr>td {
+  width: 24%;
+  background-color: $product-bg;
+  border: 1rem solid #fff;
+  border-bottom: 0.1rem solid $color-white;
+  padding: 0.5rem;
+}
+.phone-area>table>tbody>tr>td>h6{
+  float: left;
+}
+
+
+.btn-close-set2 {
+  left: 98%;
+  width: 2rem;
+  height: 2.1rem;
+  position: relative;
+  align-content: flex-end;
+  margin: 0.1rem 0 0 -1.5rem;
+  border: 1px solid $color-white;
+  @include border-radius(0.5rem);
+}
+.btn-close-set{
+  width: 2rem;
+  height: 2.1rem;
+  position: relative;
+  align-content: flex-end;
+  margin: 0.5rem 0 0 0;
+  border: 1px solid $color-white;
+  @include border-radius(0.5rem);
+}
+.word-danger{
+  color: $color-pink;
+  font-size: $font-size-sub-08;
+}
+.word-warning {
+  color: $color-orange;
+  font-size: $font-size-sub-08;
+}
+.word-gray {
+  color: $color-gray;
+  font-size: $font-size-sub-075;
+}
+/*** Modal END ***/
+
+/*** labels START ***/
+.labels-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+.labels-area{
+  display: inline-flex;
+  align-items: center;
+}
+.labels-area > label{
+  margin: 0 0.5rem 0 0;
+}
+/* 改Bootstrap-3 START */
+.form-floating>label{
+  font-size: $font-size-sub-09;
+  color: $secondary-font;
+  line-height: 1.6rem;
+}
+/* 改Bootstrap-3 END */
+/*** labels END ***/
+
+/*** react-datepicker START ***/
+/*改 react-datepicker Start */
+.react-datepicker__input-container {
+  font-size: $font-size-sub-09;
+  // border: 0.1rem solid $secondary-font;
+  border: 0.1rem solid $color-gray2;
+  padding: 0.5rem 0.7rem;
+  @include border-radius(0.4rem);
+}
+.react-datepicker__input-container input{
+  border: none;
+}
+.react-datepicker__input-container :focus-visible {
+  // outline: -webkit-focus-ring-color auto 1px;
+  outline: none;
+}
+/*改 react-datepicker End */
+/*** react-datepicker END ***/
+
+/*** Icon fontawesome START ***/
+/*改 fontawesome Start */
+.calendar-icon-area{
+  margin:0 0.5rem 0 -1.5rem;
+  position:relative;
+}
+/*改 fontawesome End */
+/*** Icon fontawesome END ***/
+
+/*改 tables START */
+.table{
+  font-size: $font-size-sub-08;
+  // overflow: scroll;
+  height: 30rem;
+  display: block;
+  width: 100%;/* 或者任何您想要指定的寬度 */
+  height:100%;
+  table-layout: fixed;
+}
+.table>:not(caption)>*>*{
+  text-align: center !important;
+}
+.table tbody tr th,
+.table tbody tr td{
+  vertical-align: middle;
+  // padding: 1rem 0.5rem;
+}
+.table thead tr th{
+  width: 7%;
+  table-layout: fixed;
+}
+.table td a {
+  cursor: pointer;
+  @include flex-justify-center-alignitems-center;
+}
+.table td button {
+  font-size: $font-size-sub-08;
+}
+/*改 tables END */
+
+// /*** Scrollbar START ***/
+// .table::-webkit-scrollbar {/* width */
+//   width: 0.5rem;
+// }
+// .table::-webkit-scrollbar-track {/* Track */
+//   // box-shadow: inset 0 0 5px grey;
+//   border-radius: 10px;
+// }
+// .table::-webkit-scrollbar-thumb {/* Handle */
+//   background: red;
+//   border-radius: 10px;
+// }
+// .table::-webkit-scrollbar-thumb:hover {/* Handle on hover */
+//   background: #b30000;
+// }
+// /*** Scrollbar END ***/
+
+/*** 上傳圖片 Button 設定 START ***/
+/* 隱藏文件選擇按鈕 */
+input[type="file"] {
+  // display: none;
+}
+.custom-file-input {/* 自定義的樣式 */
+  // max-width: 100%;
+  // border: 2px solid $color-gray2;
+  // background-color: $color-white;
+  // padding: $font-size-sub-08;
+  // @include border-radius(0.5rem);
+  cursor: pointer;/* 將游標設置為手指形式，指示它是可點擊的 */
+}
+.custom-file-input-label {/* 顯示所選文件的文件名 */
+  margin-left: $font-size-sub-08;
+}
+.upload-button,
+.upload-button2,
+.upload-button3 {
+  width: 6.8rem;
+  height: 4.8rem;
+  border: 0.1rem solid $color-gray2;
+  @include border-radius(0.5rem);
+  box-sizing: content-box;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-button2 {
+  width: 13.8rem;
+}
+.upload-button3 {
+  width: 14.8rem;
+}
+.upload-button img,
+.upload-button2 img,
+.upload-button3 img{
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+/*** 上傳圖片 Button 設定 END ***/
